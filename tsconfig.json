@@ -1,11 +1,8 @@
 {
   "compilerOptions": {
+    "typeRoots": ["./src/types", "./node_modules/@types"],
     "target": "es2017",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "es2017"
-    ],
+    "lib": ["dom", "dom.iterable", "es2017"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -20,30 +17,14 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@public/*": [
-        "./public/*"
-      ],
-      "@components/*": [
-        "./src/components/*"
-      ],
-      "@styles/*": [
-        "./styles/*"
-      ],
-      "@config/*": [
-        "./src/config/*"
-      ],
-      "@helpers/*": [
-        "./helpers/*"
-      ],
-      "@redux/*": [
-        "./redux/*"
-      ],
-      "@api/*": [
-        "./src/api/*"
-      ],
-      "@/*": [
-        "./src/*"
-      ]
+      "@public/*": ["./public/*"],
+      "@components/*": ["./src/components/*"],
+      "@styles/*": ["./styles/*"],
+      "@config/*": ["./src/config/*"],
+      "@helpers/*": ["./helpers/*"],
+      "@redux/*": ["./redux/*"],
+      "@api/*": ["./src/api/*"],
+      "@/*": ["./src/*"]
     },
     "plugins": [
       {
@@ -51,13 +32,6 @@
       }
     ]
   },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    "next-env.d.ts",
-    ".next/types/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["**/*.ts", "**/*.tsx", "next-env.d.ts", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
 }
