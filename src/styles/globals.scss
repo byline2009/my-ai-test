@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@import "~bootstrap/scss/bootstrap";
+
+@import "./pages/chat.scss";
 
 :root {
   --background: #ffffff;
@@ -23,4 +26,18 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  .content-page {
+    padding: 0 16px;
+    margin-top: 130px;
+    @media (max-width: 960px) {
+      margin-top: 100px;
+    }
+  }
 }
