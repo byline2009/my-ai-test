@@ -43,7 +43,7 @@ export const initialMessages = [
   {
     role: "assistant",
     content:
-      "Xin chào tôi là trợ lý  của bạn. Mời bạn hỏi tôi nhé",
+      "Xin chào tôi là trợ lý  của bạn. Mời bạn hỏi tôi những câu hỏi đơn giản về AI nhé",
   },
 ];
 
